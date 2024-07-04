@@ -1,0 +1,45 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 1px dotted red; */
+    justify-content: center;
+    margin-top: 50px;
+    
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 55px);
+    gap: 15px;
+    /* background-color: #ffffff7b; */
+  }
+  
+  .card {
+    width: 50px;
+    height: 50px;
+    background-color: #DDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.448);
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  .number{
+    position: absolute;
+    outline: 1px dotted red;
+    width: 150px;
+    height: 150px;
+    background-image: url(./image/number1.png);
+    background-position: center;
+    background-size: cover;
+  
+  }
+  button{
+    margin-top: 50px;
+  }
